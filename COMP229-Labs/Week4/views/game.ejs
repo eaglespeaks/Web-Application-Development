@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+  <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css' />
+  <link rel='stylesheet' href='/@fortawesome/fontawesome-free/css/all.min.css' />
+  <link rel='stylesheet' href='/Content/app.css' />
+</head>
+<body>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+                <h1><%= title %></h1>
+                <br>
+                <table class="table table-bordered table-striped table-hover">
+                    <!--header row-->
+                    <tr>
+                        <th class="text-center">Name</th>
+                        <th class="text-center">Developer</th>
+                        <th class="text-center">Released</th>
+                        <th class="text-center">Description</th>
+                        <th class="text-center">Price</th>
+                    </tr>
+
+                    <!--repeat template row-->
+                    <% for(let count = 0; count < GameList.length; count++) { %>
+                        <tr>
+                            <td class="text-center"><%= GameList[count].name %></td>
+                            <td class="text-center"><%= GameList[count].Developer %></td>
+                            <td class="text-center"><%= GameList[count].released %></td>
+                            <td class="text-center"><%= GameList[count].description %></td>
+                            <td class="text-center"><%= GameList[count].price %></td>
+                        </tr>
+
+                    <% } %>
+                </table>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+    <footer>
+        <div class="container-xxl flex-wrap pt-3 d-flex align-items-center justify-content-between">
+          <p>Copyright © 2023 Joshua Isaac</p>
+          <ul class="social-icons d-flex">
+            <a href="https://www.linkedin.com/in/joshua-isaac-osagie/" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><small><i class="fa-brands fa-linkedin-in"></i></small></a>
+          </ul>
+        </div>
+       </footer>
+    
+      <script src="jquery/dist/jquery.min.js"></script>
+      <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="/Scripts/app.js"></script>
+      <script src="/Scripts/typing.js"></script>
+</body>
+</html>

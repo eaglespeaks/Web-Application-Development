@@ -1,9 +1,9 @@
 {
-  "name": "comp229-week3",
+  "name": "comp229-week4",
   "version": "0.1.1",
   "private": true,
   "scripts": {
-    "start": "node server"
+    "start": "nodemon"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
@@ -14,12 +14,12 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jquery": "^3.7.0",
+    "mongoose": "^7.2.2",
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
   },
-  "description": "Week 3 Lab",
-  "main": "index.js",
-  "devDependencies": {},
+  "description": "Week 4 Lab",
+  "main": "server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eaglespeaks/COMP229-Week3.git"
