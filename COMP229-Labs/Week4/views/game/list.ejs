@@ -17,18 +17,16 @@
                 <table class="table table-bordered table-striped table-hover">
                     <!--header row-->
                     <tr>
-                        <th class="text-center">Name</th>
-                        <th class="text-center">Developer</th>
-                        <th class="text-center">Released</th>
-                        <th class="text-center">Description</th>
-                        <th class="text-center">Price</th>
+                        <th class="text-center">Contact Name</th>
+                        <th class="text-center">Contact Number</th>
+                        <th class="text-center">Email Address</th>
                     </tr>
 
                     <!--repeat template row-->
                     <% for(let count = 0; count < GameList.length; count++) { %>
                         <tr>
-                            <td class="text-center"><%= GameList[count].name %></td>
-                            <td class="text-center"><%= GameList[count].Developer %></td>
+                            <td class="text-center"><%= ContactList[count].name %></td>
+                            <td class="text-center"><%= ContactList[count].Developer %></td>
                             <td class="text-center"><%= GameList[count].released %></td>
                             <td class="text-center"><%= GameList[count].description %></td>
                             <td class="text-center"><%= GameList[count].price %></td>
